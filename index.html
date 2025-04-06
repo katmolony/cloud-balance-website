@@ -49,8 +49,8 @@
   <div class="container">
     <h1>Cloud Balance – Final Year Project</h1>
     <p>
-      <strong>Cloud Balance</strong> is a full-stack application that helps users monitor and manage their cloud resources and spending.
-      It features AWS integration, resource tracking, cost analysis, alerting, and a mobile companion app.
+      <strong>Cloud Balance</strong> is a full-stack cloud cost and resource manager.
+      It features secure IAM role-based AWS access, automatic resource & cost fetching, PostgreSQL storage, and a Kotlin-based Android app.
     </p>
 
     <h2>Architecture Diagram</h2>
@@ -59,23 +59,24 @@
     <h2>GitHub Repositories</h2>
     <div class="links">
       <a href="https://github.com/katmolony/cloud-balance-backend" target="_blank">🔧 Backend API (Node.js + PostgreSQL)</a>
-      <a href="https://github.com/katmolony/cloud-balance-mobile" target="_blank">📱 Android App (Jetpack Compose)</a>
-      <a href="https://github.com/katmolony/cloud-balance-fetch-lambda" target="_blank">🚀 AWS Lambda Fetch Function</a>
-      <a href="https://github.com/katmolony/cloud-balance-fetch-terraform" target="_blank">📦 Terraform for Lambda Fetch Function</a>
-      <a href="https://github.com/katmolony/terraform-cloud-balance-backend" target="_blank">🛠️ Terraform for Backend Deployment</a>
+      <a href="https://github.com/katmolony/cloud-balance-mobile" target="_blank">📱 Android App (Kotlin + Jetpack Compose)</a>
+      <a href="https://github.com/katmolony/cloud-balance-fetch-lambda" target="_blank">🚀 AWS Lambda Fetch Function (Cost & EC2)</a>
+      <a href="https://github.com/katmolony/cloud-balance-fetch-terraform" target="_blank">📦 Terraform for Lambda Fetch</a>
+      <a href="https://github.com/katmolony/terraform-cloud-balance-backend" target="_blank">🛠️ Terraform for Backend Infrastructure</a>
     </div>
 
     <h2>Key Features</h2>
     <ul>
-      <li>📡 Connect via IAM role to fetch AWS resources and cost data</li>
-      <li>📊 Store and query data with PostgreSQL</li>
-      <li>🛡️ Auth via Amazon Cognito (JWT)</li>
-      <li>⚠️ Alert system for cost/resource events</li>
-      <li>🧪 Tested with Mocha + GitHub Actions CI</li>
+      <li>🔐 IAM Role input with external ID support</li>
+      <li>📡 AWS STS-based cross-account role assumption</li>
+      <li>💸 Fetches AWS cost and EC2 usage via Lambda</li>
+      <li>🗄️ PostgreSQL schema includes users, roles, costs, resources, and alerts</li>
+      <li>🧪 Tested with Mocha, CI via GitHub Actions</li>
+      <li>📱 Kotlin app for interacting with backend securely</li>
     </ul>
 
     <footer>
-      <p>Built with ❤️ for the Final Year Project at SETU</p>
+      <p>Built with ❤️ by Kat Molony for the Final Year Project at SETU</p>
     </footer>
   </div>
 </body>
