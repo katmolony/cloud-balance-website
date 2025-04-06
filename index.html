@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cloud Balance – Final Year Project</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+    h1, h2 {
+      color: #333;
+    }
+    a {
+      color: #0077cc;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .screenshot {
+      width: 100%;
+      max-width: 800px;
+      margin: 20px 0;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+    }
+    .links a {
+      display: block;
+      margin: 8px 0;
+    }
+    footer {
+      margin-top: 40px;
+      font-size: 0.9em;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Cloud Balance – Final Year Project</h1>
+    <p>
+      <strong>Cloud Balance</strong> is a full-stack application that helps users monitor and manage their cloud resources and spending.
+      It features AWS integration, resource tracking, cost analysis, alerting, and a mobile companion app.
+    </p>
+
+    <h2>Architecture Diagram</h2>
+    <img class="screenshot" src="Screenshot 2025-04-06 at 19.28.45.png" alt="Architecture diagram" />
+
+    <h2>GitHub Repositories</h2>
+    <div class="links">
+      <a href="https://github.com/katmolony/cloud-balance-backend" target="_blank">🔧 Backend API (Node.js + PostgreSQL)</a>
+      <a href="https://github.com/katmolony/cloud-balance-mobile" target="_blank">📱 Android App (Jetpack Compose)</a>
+      <a href="https://github.com/katmolony/cloud-balance-fetch-lambda" target="_blank">🚀 AWS Lambda Fetch Function</a>
+      <a href="https://github.com/katmolony/cloud-balance-fetch-terraform" target="_blank">📦 Terraform for Lambda Fetch Function</a>
+      <a href="https://github.com/katmolony/terraform-cloud-balance-backend" target="_blank">🛠️ Terraform for Backend Deployment</a>
+    </div>
+
+    <h2>Key Features</h2>
+    <ul>
+      <li>📡 Connect via IAM role to fetch AWS resources and cost data</li>
+      <li>📊 Store and query data with PostgreSQL</li>
+      <li>🛡️ Auth via Amazon Cognito (JWT)</li>
+      <li>⚠️ Alert system for cost/resource events</li>
+      <li>🧪 Tested with Mocha + GitHub Actions CI</li>
+    </ul>
+
+    <footer>
+      <p>Built with ❤️ for the Final Year Project at SETU</p>
+    </footer>
+  </div>
+</body>
+</html>
